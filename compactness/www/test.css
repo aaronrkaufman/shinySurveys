@@ -1,0 +1,415 @@
+/* add district images to sortables */
+
+div[data-value="1"] {
+	width: 120px; height: 100px;
+	background: url(images/17_U_016_2000.jpg) center;
+    background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+    margin: 0 auto;
+	text-indent: -9999px;
+}
+
+div[data-value="2"] {
+	width: 120px; height: 100px;
+	background: url(images/18_L_019_2010.jpg) center;
+    background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+    margin: 0 auto;
+	text-indent: -9999px;
+}
+
+div[data-value="3"] {
+	width: 120px; height: 100px;
+	background: url(images/22_L_27_2000.jpg) center;
+    background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+    margin: 0 auto;
+	text-indent: -9999px;
+}
+
+div[data-value="4"] {
+	width: 120px; height: 100px;
+	background: url(images/25_L_153_2000.jpg) center;
+    background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+    margin: 0 auto;
+	text-indent: -9999px;
+}
+
+div[data-value="5"] {
+	width: 120px; height: 100px;
+	background: url(images/28_L_115_2000.jpg) center;
+    background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+    margin: 0 auto;
+	text-indent: -9999px;
+}
+
+div[data-value="6"] {
+	width: 120px; height: 100px;
+	background: url(images/29_U_011_2010.jpg) center;
+    background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+    margin: 0 auto;
+	text-indent: -9999px;
+}
+
+div[data-value="7"] {
+	width: 120px; height: 100px;
+	background: url(images/33_U_S16_2000.jpg) center;
+    background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+    margin: 0 auto;
+	text-indent: -9999px;
+}
+
+div[data-value="8"] {
+	width: 120px; height: 100px;
+	background: url(images/36_C_3_1953.jpg) center;
+    background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+    margin: 0 auto;
+	text-indent: -9999px;
+}
+
+div[data-value="9"] {
+	width: 120px; height: 100px;
+	background: url(images/38_C_3_1913.jpg) center;
+    background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+    margin: 0 auto;
+	text-indent: -9999px;
+}
+
+div[data-value="10"] {
+	width: 120px; height: 100px;
+	background: url(images/38_L_23_2000.jpg) center;
+    background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+    margin: 0 auto;
+	text-indent: -9999px;
+}
+
+div[data-value="11"] {
+	width: 120px; height: 100px;
+	background: url(images/38_L_43_2000.jpg) center;
+    background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+    margin: 0 auto;
+	text-indent: -9999px;
+}
+
+div[data-value="12"] {
+	width: 120px; height: 100px;
+	background: url(images/39_C_17_1913.jpg) center;
+    background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+    margin: 0 auto;
+	text-indent: -9999px;
+}
+
+div[data-value="13"] {
+	width: 120px; height: 100px;
+	background: url(images/42_C_9_2013.jpg) center;
+    background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+    margin: 0 auto;
+	text-indent: -9999px;
+}
+
+div[data-value="14"] {
+	width: 120px; height: 100px;
+	background: url(images/42_L_172_2010.jpg) center;
+    background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+    margin: 0 auto;
+	text-indent: -9999px;
+}
+
+div[data-value="15"] {
+	width: 120px; height: 100px;
+	background: url(images/42_L_193_2000.jpg) center;
+    background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+    margin: 0 auto;
+	text-indent: -9999px;
+}
+
+div[data-value="16"] {
+	width: 120px; height: 100px;
+	background: url(images/45_U_17_2000.jpg) center;
+    background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+    margin: 0 auto;
+	text-indent: -9999px;
+}
+
+div[data-value="17"] {
+	width: 120px; height: 100px;
+	background: url(images/51_C_9_1935.jpg) center;
+    background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+    margin: 0 auto;
+	text-indent: -9999px;
+}
+
+div[data-value="18"] {
+	width: 120px; height: 100px;
+	background: url(images/54_C_5_1931.jpg) center;
+    background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+    margin: 0 auto;
+	text-indent: -9999px;
+}
+
+div[data-value="19"] {
+	width: 120px; height: 100px;
+	background: url(images/56_L_049_2010.jpg) center;
+    background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+    margin: 0 auto;
+	text-indent: -9999px;
+}
+
+div[data-value="20"] {
+	width: 120px; height: 100px;
+	background: url(images/56_U_8_2000.jpg) center;
+    background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+    margin: 0 auto;
+	text-indent: -9999px;
+}
+
+/* border boxes 
+
+div[id="source"] {
+	width: 275px;
+    height: 420px;
+    border: 2.5px solid black;
+    box-sizing: border-box;
+}
+*/
+div[id="dest1"] {
+	width: 620px;
+    height: 420px;
+    border: 2.5px solid black;
+    box-sizing: border-box;
+}
+
+div[id="dest2"] {
+	width: 70px;
+    height: 2050px;
+    border: 2.5px solid black;
+    box-sizing: border-box;
+}
+
+
+
+div[id="toptext"] {
+	width: 600px;
+    height: 280px;
+    border: 2.5px solid white;
+    box-sizing: border-box;
+}
+
+div[id="toptext2"] {
+	width: 600px;
+    height: 60px;
+    border: 2.5px solid white;
+    box-sizing: border-box;
+}
+
+
+div[id="bottomtext"] {
+	width: 600px;
+    height: 80px;
+    border: 2.5px solid white;
+    box-sizing: border-box;
+}
+
+
+/* color changing boxes  */
+
+div[id="dest1"] :first-child {
+	background-color: #FF0000;
+}
+
+div[id="dest1"] :nth-child(2) {
+	background-color: #FF4141;
+}
+
+div[id="dest1"] :nth-child(3) {
+	background-color: #FF5959;
+}
+
+div[id="dest1"] :nth-child(4) {
+	background-color: #FF6767;
+}
+
+div[id="dest1"] :nth-child(5) {
+	background-color: #FF7272;
+}
+
+div[id="dest1"] :nth-child(6) {
+	background-color: #FF7A7A;
+}
+
+div[id="dest1"] :nth-child(7) {
+	background-color: #FF8080;
+}
+
+div[id="dest1"] :nth-child(8) {
+	background-color: #FF8C8C;
+}
+
+div[id="dest1"] :nth-child(9) {
+	background-color: #FF9292;
+}
+
+div[id="dest1"] :nth-child(10) {
+	background-color: #FF9696;
+}
+
+
+div[id="dest1"] :nth-child(11) {
+	background-color: #FF8686;
+}
+
+div[id="dest1"] :nth-child(12) {
+	background-color: #FF9393;
+}
+
+div[id="dest1"] :nth-child(13) {
+	background-color: #FF9B9B;
+}
+
+div[id="dest1"] :nth-child(14) {
+	background-color: #FFA3A3;
+}
+
+div[id="dest1"] :nth-child(15) {
+	background-color: #FFAAAA;
+}
+
+div[id="dest1"] :nth-child(16) {
+	background-color: #FFB1B1;
+}
+
+div[id="dest1"] :nth-child(17) {
+	background-color: #FFD6D6;
+}
+
+div[id="dest1"] :nth-child(18) {
+	background-color: #FFE4E4;
+}
+
+div[id="dest1"] :nth-child(19) {
+	background-color: #FFF1F1;
+}
+
+div[id="dest1"] :nth-child(20) {
+	background-color: #FFF8F8;
+}
+
+
+
+div[id="dest2"] :first-child {
+	background-color: #FF0000;
+}
+
+div[id="dest2"] :nth-child(2) {
+	background-color: #FF4141;
+}
+
+div[id="dest2"] :nth-child(3) {
+	background-color: #FF5959;
+}
+
+div[id="dest2"] :nth-child(4) {
+	background-color: #FF6767;
+}
+
+div[id="dest2"] :nth-child(5) {
+	background-color: #FF7272;
+}
+
+div[id="dest2"] :nth-child(6) {
+	background-color: #FF7A7A;
+}
+
+div[id="dest2"] :nth-child(7) {
+	background-color: #FF8080;
+}
+
+div[id="dest2"] :nth-child(8) {
+	background-color: #FF8C8C;
+}
+
+div[id="dest2"] :nth-child(9) {
+	background-color: #FF9292;
+}
+
+div[id="dest2"] :nth-child(10) {
+	background-color: #FF9696;
+}
+
+
+div[id="dest2"] :nth-child(11) {
+	background-color: #FF8686;
+}
+
+div[id="dest2"] :nth-child(12) {
+	background-color: #FF9393;
+}
+
+div[id="dest2"] :nth-child(13) {
+	background-color: #FF9B9B;
+}
+
+div[id="dest2"] :nth-child(14) {
+	background-color: #FFA3A3;
+}
+
+div[id="dest2"] :nth-child(15) {
+	background-color: #FFAAAA;
+}
+
+div[id="dest2"] :nth-child(16) {
+	background-color: #FFB1B1;
+}
+
+div[id="dest2"] :nth-child(17) {
+	background-color: #FFD6D6;
+}
+
+div[id="dest2"] :nth-child(18) {
+	background-color: #FFE4E4;
+}
+
+div[id="dest2"] :nth-child(19) {
+	background-color: #FFF1F1;
+}
+
+div[id="dest2"] :nth-child(20) {
+	background-color: #FFF8F8;
+}

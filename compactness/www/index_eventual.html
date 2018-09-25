@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compactness Dragable and Sortable</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+  ul { margin: 0; padding: 0; margin-bottom: 10px; column-count: 5; columns: 5; -webkit-columns: 5; -moz-columns: 5;}
+  li { margin: 5px; padding: 5px; width: 150px; }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#sortable" ).sortable({
+      revert: false,
+      placeholder: "sortable-placeholder",
+      forcePlaceholderSize: true,
+      forceHelperSize: true
+    });
+    $( "#draggable" ).draggable({
+      connectToSortable: "#sortable",
+      helper: "clone",
+      revert: "invalid"
+    });
+    $( "ul, li" ).disableSelection();
+  } );
+  </script>
+</head>
+<body>
+ 
+<ul>
+  <li>Drag me down: Order column-wise</li>
+</ul>
+ 
+<ul id="sortable">
+  <li class="ui-state-default"><img src = "./images/01_0_070.jpg" alt="01_0_070" style="width:150px;height:150px;"/></image></li>
+  <li class="ui-state-default"><img src = "./images/01_0_014.jpg" alt="01_0_014" style="width:150px;height:150px;"/></image></li>
+  <li class="ui-state-default"><img src = "./images/04_0_022.jpg" alt="04_0_022" style="width:150px;height:150px;"/></image></li>
+  <li class="ui-state-default"><img src = "./images/05_0_083.jpg" alt="05_0_083" style="width:150px;height:150px;"/></image></li>
+  <li class="ui-state-default"><img src = "./images/05_1_024.jpg" alt="05_1_024" style="width:150px;height:150px;"/></image></li>
+  <li class="ui-state-default"><img src = "./images/06_1_036.jpg" alt="01_0_070" style="width:150px;height:150px;"/></image></li>
+  <li class="ui-state-default"><img src = "./images/08_1_017.jpg" alt="01_0_014" style="width:150px;height:150px;"/></image></li>
+  <li class="ui-state-default"><img src = "./images/09_0_014.jpg" alt="04_0_022" style="width:150px;height:150px;"/></image></li>
+  <li class="ui-state-default"><img src = "./images/09_0_031.jpg" alt="05_0_083" style="width:150px;height:150px;"/></image></li>
+  <li class="ui-state-default"><img src = "./images/09_0_092.jpg" alt="05_1_024" style="width:150px;height:150px;"/></image></li>
+  <li class="ui-state-default"><img src = "./images/09_0_142.jpg" alt="01_0_070" style="width:150px;height:150px;"/></image></li>
+  <li class="ui-state-default"><img src = "./images/09_1_017.jpg" alt="01_0_014" style="width:150px;height:150px;"/></image></li>
+  <li class="ui-state-default"><img src = "./images/12_0_037.jpg" alt="04_0_022" style="width:150px;height:150px;"/></image></li>
+  <li class="ui-state-default"><img src = "./images/12_0_109.jpg" alt="05_0_083" style="width:150px;height:150px;"/></image></li>
+  <li class="ui-state-default"><img src = "./images/12_1_003.jpg" alt="05_1_024" style="width:150px;height:150px;"/></image></li>
+  <li class="ui-state-default"><img src = "./images/12_1_032.jpg" alt="01_0_070" style="width:150px;height:150px;"/></image></li>
+  <li class="ui-state-default"><img src = "./images/12_1_039.jpg" alt="01_0_014" style="width:150px;height:150px;"/></image></li>
+  <li class="ui-state-default"><img src = "./images/13_0_170.jpg" alt="04_0_022" style="width:150px;height:150px;"/></image></li>
+  <li class="ui-state-default"><img src = "./images/15_0_003.jpg" alt="05_0_083" style="width:150px;height:150px;"/></image></li>
+  <li class="ui-state-default"><img src = "./images/16_1_005.jpg" alt="05_1_024" style="width:150px;height:150px;"/></image></li>
+</ul>
+ 
+
+<p>
+      <label>When finished, click the button below</label><br /> 
+      <input type="button" name="submit" value="Submit"/>
+</p>
+ 
+</body>
+</html>

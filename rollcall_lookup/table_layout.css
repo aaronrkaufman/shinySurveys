@@ -1,0 +1,11 @@
+table.fixed { table-layout:fixed; }
+table.fixed td { overflow: hidden; }
+
+.verticalLine {
+  border-left: thick solid #ff0000;
+}
+
+td{
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
