@@ -14,6 +14,7 @@ load("npi_battery.rda") # this will eventually be in the main package
 # Read the survey questions
 Qlist <- read.csv("Qlist.csv", sep="\t")
 
+# Generate a random response code
 randstring <- function(n=1, length=12){
   randomString <- c(1:n)
   for (i in 1:n){
@@ -22,23 +23,21 @@ randstring <- function(n=1, length=12){
   return(randomString)
 }
 
+# Set up the results object
 results <<- rep("", nrow(Qlist)+6)
 names(results)  <<- c("pid", "vote2", "npi1", "npi2", "npi3", "npi4", "npi5", "score")
 
+
 shinyServer(function(input, output) {
   
-  
-  ## Modify these two with if statements:
-  # if it's within Qlist, do that;
-  # else, update the cat object then look to it
-  
+
+  ## If we're still in the Qlist, use the radio buttom options from there
     option.list <- reactive({
     if(input$Click.Counter >= 1 & input$Click.Counter <= nrow(Qlist)){
       qlist <- Qlist[input$Click.Counter,3:ncol(Qlist)]
-      # Remove items from the qlist if the option is empty.
       # Also, convert the option list to matrix. 
       as.matrix(qlist[qlist!=""])
-    } else{
+    } else{ # if we're in the NPI battery, show the items from there
       qid = selectItem(cat)$next_item
       #print(npi_battery[[qid]][2:3])
       npi_battery[[qid]][2:3]
@@ -47,6 +46,9 @@ shinyServer(function(input, output) {
   
   # This function show the question number (Q:)
   # Followed by the question text.
+  # Again, produce Qlist questions if we're there
+  # If we're at the NPI battery, print those Qs instead
+    
   output$question <- renderText({
     if(input$Click.Counter >= 1 & input$Click.Counter <= nrow(Qlist)){
       paste0(
@@ -65,26 +67,10 @@ shinyServer(function(input, output) {
   })
   
   
-  
-#  output$save.results <- renderText({
-#    # After each click, save the results of the radio buttons.
-#    #if ((input$Click.Counter>0)&(input$Click.Counter>!nrow(Qlist)))
-#    #print(input$Click.Counter)
-#    if ((input$Click.Counter>0)){
-#      try(results[input$Click.Counter[1]] <<- input$survey)
-#    }
-#   # try is used because there is a brief moment in which
-#    # the if condition is true but input$survey = NULL
-#    
-#    #if (input$Click.Counter==nrow(Qlist)+2) {
-#    #
-#    #   }
-#    
-#    # Because there has to be a UI object to call this
-#    # function I set up render text that distplays the content
-#    # of this funciton.
-#    
-#  })
+  ## This part does a lot of the work. 
+  ## It determines what the server does after the Next button is clicked:
+  ## Either it stores Qlist items
+  ## Or it updates the cat object then stores the results
   
   observeEvent(input$Click.Counter, { 
     print(input$Click.Counter[1])
@@ -141,8 +127,11 @@ shinyServer(function(input, output) {
         )
       )
     }
+    
     # Once the next button has been clicked once we see each question
     # of the survey.
+    # This shouldn't be modified except for the +5 at the end
+    
     if (input$Click.Counter>0 & input$Click.Counter<=nrow(Qlist)+5){
       #shinyjs::disable("Click.Counter")
       return(
@@ -155,11 +144,12 @@ shinyServer(function(input, output) {
       )
     }
     
+    ### This below is all the finishing behavior
+    ## Modify the +6 as necessary
+    ## Uncomment the save and upload lines for launch
+    
     if (input$Click.Counter>=nrow(Qlist)+6){
-      #cat <<- storeAnswer(cat, item = qid, answer = which(npi_battery[[qid]] == input$survey) - 1)
-      # extract score, append it to results
       shinyjs::disable("Click.Counter")
-      #print(input$survey)
       uniqueID = randstring()
       fn = paste(uniqueID, ".RData", sep="")
       #save(results, file=fn)
@@ -168,7 +158,6 @@ shinyServer(function(input, output) {
       #uniqueID = randstring()
       return(list(
         h4(paste("All finished. Thanks for completing this survey! Your ID is:", uniqueID)),
-        #h4(paste("Your score on the NPI battery is:", results[8])),
         h4("Please copy your ID to supply to MTurk, then close this window.")))
     }
     
