@@ -1,11 +1,12 @@
 library(rsconnect)
 library(shiny)
-
+library(ggmap)
+library(sp)
 
 ## Code to match respondents to their Reps
 load("rep_data.RData")
 lookup_rep = function(address){
-  g = geocode(address)
+  g = ggmap::geocode(address)
   coordinates(g) <- ~ lon + lat
   proj4string(sp)<-proj4string(districts)
   temp = function(x){
